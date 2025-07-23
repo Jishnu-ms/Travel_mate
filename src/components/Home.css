@@ -1,0 +1,379 @@
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+
+}
+
+.highlight-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 10px;
+ 
+}
+
+.highlight-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.highlight-text h4 {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.highlight-text p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.highlight-image {
+  flex: 1;
+ 
+ 
+  display: flex;
+  justify-content: center;
+}
+
+.highlight-image img {
+  width: 500px;
+
+  height: auto;
+}
+.intro-text {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.intro-text h4 {
+  font-size: 2rem;
+  color: black;
+}
+
+.intro-text h5 {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.features-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+ 
+  text-align: center;
+}
+
+.feature-box {
+  flex: 1 1 200px;
+  margin: 10px;
+  padding: 20px;
+  max-width: 220px;
+  background: white;
+  border-radius: 12px;
+  
+}
+
+.feature-box img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.feature-box h5 {
+  font-size: 1rem;
+  color: #333;
+}
+
+.section-heading {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.large-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(128, 0, 128, 0.3); /* Softer, more visible purple shadow */
+  border-radius: 12px;
+}
+
+
+.inner-box {
+  display: flex;                 /* Make it a flex container */
+  flex-direction: column;       /* Stack children vertically */
+  align-items: center;          /* Center horizontally */
+  justify-content: center;      /* Center vertically */
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+.iconcont {
+  height: 100px;
+  width: 100px;
+   background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Blue to purple gradient */
+  display: flex;
+  align-items: center;     /* Vertical center */
+  justify-content: center; /* Horizontal center */
+  border-radius: 100px;      /* Optional: makes it look nicer */
+}
+
+.large-container {
+  display: flex;
+  flex-direction: row; /* Ensures row layout */
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(128, 0, 128, 0.4); /* Brighter purple shadow */
+  border-radius: 12px;
+  background-color: #fff;
+}
+.custom-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(128, 0, 128, 0.3);
+  overflow: hidden;
+  text-align: center;
+  max-width: 350px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+ 
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 15px 0 10px;
+  color: black
+}
+
+.card-description {
+  font-size: 16px;
+  color: #555;
+  flex-grow: 1;
+}
+
+.card-button {
+  margin-top: 20px;
+  background: lightcoral;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 60px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card-button:hover {
+  transform: scale(1.05);
+  background-color: red;
+}
+
+.large-container2 {
+  display: flex;
+  flex-direction: row; /* Ensures row layout */
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+
+
+  background-color: #fff;
+}
+
+.spacer{
+    height: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.custom-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(128, 0, 128, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 350px;
+  margin: auto; /* center in grid or parent */
+}
+
+
+.custom-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 15px 0 5px;
+  color: #333;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  padding: 0 20px;
+  color: #666;
+}
+
+
+.travel-card {
+  width: 100%; /* full width of the grid column */
+  max-width: 320px; /* limit max width */
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(128, 0, 128, 0.2);
+  margin: auto; /* center the card inside the column */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: tomato;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.content h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.content p {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.info {
+  font-size: 13px;
+  color: #444;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.rating {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button.book {
+  flex: 1;
+  background-color: #5f2c82;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.view {
+  flex: 1;
+  background-color: white;
+  color: #5f2c82;
+  border: 2px solid #5f2c82;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* For screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+}

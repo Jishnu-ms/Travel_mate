@@ -1,0 +1,45 @@
+.contact-section {
+    display: flex;
+    padding: 50px 20px;
+    justify-content: center;
+    
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+}
+
+.map {
+    width: 400px;
+    height: 300px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.contact-form button {
+    background: #00547f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}

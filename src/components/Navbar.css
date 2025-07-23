@@ -1,0 +1,108 @@
+/* Main Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.2); /* translucent white */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* push links to right */
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-menu li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* Book Now Button */
+.book-now-btn {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Hamburger Icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  transition: 0.4s;
+}
+
+/* Responsive Mobile View */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .nav-menu.active {
+    max-height: 400px;
+    border-top: 1px solid #ddd;
+  }
+
+  .nav-menu li {
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .book-now-btn {
+    margin: 10px auto;
+  }
+}

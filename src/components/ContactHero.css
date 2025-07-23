@@ -1,0 +1,22 @@
+.chero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('C:\Users\nifty\OneDrive\Desktop\munnar_package.jpg') center/cover no-repeat;
+    padding: 150px 20px;
+    text-align: center;
+    color: white;
+}
+
+.Heading {
+    font-size: 3.5rem;
+    /* Make it large */
+    font-weight: 700;
+    /* Bold */
+    margin: 0;
+    line-height: 1.2;
+}
+
+.chero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: 400;
+}
